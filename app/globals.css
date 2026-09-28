@@ -1,26 +1,167 @@
+/* Satoshi Font Definitions */
+@font-face {
+  font-family: 'Satoshi';
+  src: url('https://cdn.fontshare.com/wf/TTX2Z3BF3P6Y5BQT3IV2VNOK6FL22KUT/7QYRJOI3JIMYHGY6CH7SOIFRQLZOLNJ6/KFIAZD4RUMEZIYV6FQ3T3GP5PDBDB6JY.woff2') format('woff2'),
+       url('https://cdn.fontshare.com/wf/TTX2Z3BF3P6Y5BQT3IV2VNOK6FL22KUT/7QYRJOI3JIMYHGY6CH7SOIFRQLZOLNJ6/KFIAZD4RUMEZIYV6FQ3T3GP5PDBDB6JY.woff') format('woff');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Satoshi';
+  src: url('https://cdn.fontshare.com/wf/P2LQKHE6KA6ZP4AAGN72KDWMHH6ZH3TA/ZC32TK2P7FPS5GFTL46EU6KQJA24ZYDB/7AHDUZ4A7LFLVFUIFSARGIWCRQJHISQP.woff2') format('woff2'),
+       url('https://cdn.fontshare.com/wf/P2LQKHE6KA6ZP4AAGN72KDWMHH6ZH3TA/ZC32TK2P7FPS5GFTL46EU6KQJA24ZYDB/7AHDUZ4A7LFLVFUIFSARGIWCRQJHISQP.woff') format('woff');
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Satoshi';
+  src: url('https://cdn.fontshare.com/wf/LAFFD4SDUCDVQEXFPDC7C53EQ4ZELWQI/PXCT3G6LO6ICM5I3NTYENYPWJAECAWDD/GHM6WVH6MILNYOOCXHXB5GTSGNTMGXZR.woff2') format('woff2'),
+       url('https://cdn.fontshare.com/wf/LAFFD4SDUCDVQEXFPDC7C53EQ4ZELWQI/PXCT3G6LO6ICM5I3NTYENYPWJAECAWDD/GHM6WVH6MILNYOOCXHXB5GTSGNTMGXZR.woff') format('woff');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Satoshi';
+  src: url('https://cdn.fontshare.com/wf/NHPGVFYUXYXE33DZ75OIT4JFGHITX5PE/PSUTMASCDJTVPERDYJZPN23BVUFUCQIF/J64QX5IPOHK56I2KYUNBQ5M2XWZEYKYX.woff2') format('woff2'),
+       url('https://cdn.fontshare.com/wf/NHPGVFYUXYXE33DZ75OIT4JFGHITX5PE/PSUTMASCDJTVPERDYJZPN23BVUFUCQIF/J64QX5IPOHK56I2KYUNBQ5M2XWZEYKYX.woff') format('woff');
+  font-weight: 900;
+  font-display: swap;
+  font-style: normal;
+}
+
 @import "tailwindcss";
 
 :root {
+  /* Fonts */
+  --font-satoshi: 'Satoshi', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+  /* Default Theme Colors (Preserves exact current UI) */
+  --primary: #003BE2;
+  --accent: #D4FB20;
+  --accent-ring: #CBFC01;
+  --accent-text: #242528;
+  
+  --bg-primary: #003BE2;
+  --bg-card: #FFFFFF;
+  --bg-progress: #F6F6F6;
+  --grid-line: rgba(255, 255, 255, 0.1);
+  
+  --text-primary: #FFFFFF;
+  --text-nav: #F5F5F6;
+  --text-hero-sub: #E5E6E8;
+  --text-card-title: #242528;
+  --text-muted: #82868E;
+  
+  --star: #FFB800;
+
   --background: #ffffff;
   --foreground: #171717;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* Theme 2: Dark Mode */
+[data-theme="dark"] {
+  --primary: #0B0F19;
+  --accent: #38BDF8;
+  --accent-ring: #0284C7;
+  --accent-text: #0F172A;
+  
+  --bg-primary: #0B0F19;
+  --bg-card: #1E293B;
+  --bg-progress: #334155;
+  --grid-line: rgba(255, 255, 255, 0.05);
+  
+  --text-primary: #FFFFFF;
+  --text-nav: #F1F5F9;
+  --text-hero-sub: #94A3B8;
+  --text-card-title: #F8FAFC;
+  --text-muted: #94A3B8;
+  
+  --star: #FBBF24;
+  --background: #0B0F19;
+  --foreground: #ededed;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Theme 3: Emerald */
+[data-theme="emerald"] {
+  --primary: #064E3B;
+  --accent: #34D399;
+  --accent-ring: #10B981;
+  --accent-text: #064E3B;
+  
+  --bg-primary: #064E3B;
+  --bg-card: #FFFFFF;
+  --bg-progress: #ECFDF5;
+  --grid-line: rgba(255, 255, 255, 0.1);
+  
+  --text-primary: #FFFFFF;
+  --text-nav: #F0FDF4;
+  --text-hero-sub: #D1FAE5;
+  --text-card-title: #064E3B;
+  --text-muted: #6B7280;
+  
+  --star: #F59E0B;
+}
+
+/* Theme 4: Violet */
+[data-theme="violet"] {
+  --primary: #4C1D95;
+  --accent: #F472B6;
+  --accent-ring: #EC4899;
+  --accent-text: #4C1D95;
+  
+  --bg-primary: #4C1D95;
+  --bg-card: #FFFFFF;
+  --bg-progress: #FDF2F8;
+  --grid-line: rgba(255, 255, 255, 0.1);
+  
+  --text-primary: #FFFFFF;
+  --text-nav: #FAF5FF;
+  --text-hero-sub: #E9D5FF;
+  --text-card-title: #4C1D95;
+  --text-muted: #6B7280;
+  
+  --star: #FBBF24;
+}
+
+@theme inline {
+  --font-satoshi: 'Satoshi', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-poppins: var(--font-poppins);
+  
+  --color-primary: var(--primary);
+  --color-accent: var(--accent);
+  --color-accent-ring: var(--accent-ring);
+  --color-accent-text: var(--accent-text);
+  
+  --color-bg-primary: var(--bg-primary);
+  --color-card: var(--bg-card);
+  --color-progress: var(--bg-progress);
+  --color-grid-line: var(--grid-line);
+  
+  --color-text-primary: var(--text-primary);
+  --color-nav-text: var(--text-nav);
+  --color-hero-sub: var(--text-hero-sub);
+  --color-card-title: var(--text-card-title);
+  --color-text-muted: var(--text-muted);
+  
+  --color-star: var(--star);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+}
+
+.font-satoshi {
+  font-family: 'Satoshi', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.font-poppins {
+  font-family: var(--font-poppins), 'Poppins', sans-serif;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Satoshi', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
