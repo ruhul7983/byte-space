@@ -1,6 +1,3 @@
-"use client";
-
-import React from "react";
 import Image from "next/image";
 import { Search, Star } from "lucide-react";
 import Navbar from "@/components/Navbar/Navbar";
@@ -101,7 +98,6 @@ export default function Hero() {
 
         {/* Search Capsule Input */}
         <form
-          onSubmit={(e) => e.preventDefault()}
           className="flex w-full max-w-[95%] sm:max-w-120 lg:max-w-135 items-center rounded-full bg-card py-1.5 sm:py-2 pr-1.5 sm:pr-2 pl-4 sm:pl-6 shadow-2xl"
         >
           <Search className="mr-2.5 sm:mr-3 h-5 w-5 sm:h-[22px] sm:w-[22px] shrink-0 text-text-muted" />
