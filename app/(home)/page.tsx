@@ -1,4 +1,5 @@
 import BrandLogo from "./_sections/BrandLogo";
+import CoursesSection from "./_sections/CoursesSection";
 import Hero from "./_sections/Hero";
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
     <div>
       <Hero/>
       <BrandLogo/>
+      <CoursesSection/>
     </div>
   );
 }
