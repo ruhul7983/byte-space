@@ -129,7 +129,7 @@ export default function CoursesSection() {
 
   return (
     <section className="w-full bg-white py-[72px]">
-      <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-360 px-4 sm:px-6 lg:px-8">
         {/* Header Section */}
         <div className="mx-auto flex max-w-[760px] flex-col items-center text-center">
           {/* Heading M */}
