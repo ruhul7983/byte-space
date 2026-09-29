@@ -128,8 +128,13 @@ export default function CoursesSection() {
   const [activeCategory, setActiveCategory] = useState('Featured');
 
   return (
+<<<<<<< HEAD
+    <section className="w-full bg-white py-[72px]">
+      <div className="mx-auto max-w-360 px-4 sm:px-6 lg:px-8">
+=======
     <section className="w-full bg-white pt-[72px]">
       <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
+>>>>>>> origin/main
         {/* Header Section */}
         <div className="mx-auto flex max-w-[760px] flex-col items-center text-center">
           {/* Heading M */}
