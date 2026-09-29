@@ -1,4 +1,5 @@
 import BrandLogo from "./_sections/BrandLogo";
+import CommunityFeedback from "./_sections/CommunityFeedback";
 import CourseCategories from "./_sections/CourseCategories";
 import CoursesSection from "./_sections/CoursesSection";
 import Hero from "./_sections/Hero";
@@ -12,6 +13,7 @@ export default function Home() {
       <CoursesSection/>
       <PlatformGrowthSection/>
       <CourseCategories/>
+      <CommunityFeedback/>
     </div>
   );
 }
